@@ -1,0 +1,59 @@
+<div class="mainContainer">  
+    <div class="content">
+        <div class="header">
+            <h1>Angular File Upload</h1>
+        </div>
+        <div class="row margin25">
+  
+            <div class="col-md-4">
+  
+            </div>
+            <div class="col-md-4">
+                
+                    <div class="custom-file">
+                        <form  (ngSubmit)="onSubmit()" > 
+                            <div class="form-group" >
+                                <input  
+                                type="file"
+                                (change)="fileChange($event)"> 
+                            </div>
+                            <div class="form-group" >
+                                    <input  
+                                    type="file"  
+                                    (change)="fileChange1($event)"> 
+                                </div>
+                            <div class="form-group">
+                                <input class="form-control" 
+                                    type="text" 
+                                    placeholder="Tarjeta Debito"
+                                    name="tarjeta_debito" 
+                                    [(ngModel)]="data.tarjeta_debito" 
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                    <input class="form-control" 
+                                        type="text" 
+                                        placeholder="Fecha Vencimiento Tarjeta"
+                                        name="caducidadTarjeta" 
+                                        [(ngModel)]="data.caducidad_tarjeta"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                        <input class="form-control" 
+                                            type="text" 
+                                            placeholder="Monto a Prestar"
+                                            name="prestamo" 
+                                            [(ngModel)]="data.prestamo" 
+                                            required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary"> Solicitar Prestamo</button>
+                        </form>
+                    </div>
+                
+            </div>
+            <div class="col-md-4">
+  
+            </div>
+        </div>
+    </div>
+  </div>  
