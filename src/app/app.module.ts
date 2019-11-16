@@ -9,6 +9,9 @@ import { NavbarComponent } from './components/public/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PrestamosService } from './services/prestamos.service';
 import { PrestamosComponent } from './components/privado/prestamos/prestamos.component';
+import { AuthService } from './services/auth.service';
+import { LoginComponent } from './components/public/login/login.component';
+import { RegisterComponent } from './components/public/register/register.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { PrestamosComponent } from './components/privado/prestamos/prestamos.com
     HomeComponent,
     AboutComponent,
     NavbarComponent,
-    PrestamosComponent
+    PrestamosComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,7 @@ import { PrestamosComponent } from './components/privado/prestamos/prestamos.com
     HttpClientModule,
     FormsModule
   ],
-  providers: [ PrestamosService, FormBuilder],
+  providers: [ PrestamosService, FormBuilder, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

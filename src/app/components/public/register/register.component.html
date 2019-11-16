@@ -1,0 +1,153 @@
+
+<app-navbar></app-navbar>
+<div class="container " style="background: url(assets/img/banner/home-banner.png);">
+
+    <div class="row flex justify-content-md-center">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+            <form role="form" (ngSubmit)="register( fLogin )" #fLogin="ngForm">
+                <h2>Registrate</h2>
+                <hr class="colorgraph">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>Correo electronico</label>
+                            <input type="text" class="form-control" name="email" placeholder="User Name"
+                                [(ngModel)]="data.I_ROL">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>Contraseña</label>
+                            <input type="password" class="form-control" name="password" placeholder="Password"
+                                [(ngModel)]="data.I_CONTRASENA">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Primer Nombre</label>
+                    <input type="text" class="form-control" name="primer_nombre" placeholder="Primer Nombre"
+                        [(ngModel)]="data.I_PRIMER_NOMBRE">
+                </div>
+                <div class="form-group">
+                    <label>Segundo Nombre</label>
+                    <input type="text" class="form-control" name="segundo_nombre" placeholder="Segundo Nombre"
+                        [(ngModel)]="data.I_SEGUNDO_NOMBRE">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>Tercer Nombre</label>
+                            <input type="text" class="form-control" name="tercer_nombre" placeholder="Tercer Nombre"
+                                [(ngModel)]="data.I_TERCER_NOMBRE">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>Primer Apellido</label>
+                            <input type="text" class="form-control" name="primer_apellido" placeholder="Primer Apellido"
+                                [(ngModel)]="data.I_PRIMER_APELLIDO">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>Segundo Apellido</label>
+                            <input type="text" class="form-control" name="segundo_apellido"
+                                placeholder="Segundo Apellido" [(ngModel)]="data.I_SEGUNDO_APELLIDO">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>Apellido de Casado(a)</label>
+                            <input type="text" class="form-control" name="casado" placeholder="Apellido Casada(a)"
+                                [(ngModel)]="data.I_APELLDO_CASADA">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>Nacionalidad</label>
+                            <input type="text" class="form-control" name="nacionalidad" placeholder="Nacionalidad"
+                                [(ngModel)]="data.I_NACIONALDAD">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>Fecha Nacimiento</label>
+                            <input type="text" class="form-control" name="fechanacimiento" placeholder="Fecha Nacimiento"
+                                [(ngModel)]="data.I_FECHA_NACIMIENTO">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Pasaporte</label>
+                    <input type="text" class="form-control" name="pasaporte" placeholder="Pasaporte"
+                        [(ngModel)]="data.I_PASAPORTE">
+                </div>
+                <div class="form-group">
+                    <label>Fecha Emición del Pasaporte</label>
+                    <input type="text" class="form-control" name="pasaporte_emicion"
+                        placeholder="Fecha Emición del Pasaporte" [(ngModel)]="data.I_FECHA_EMICION_PASAPORTE">
+                </div>
+                <div class="form-group">
+                    <label>Fecha Vencimiento del Pasaporte</label>
+                    <input type="text" class="form-control" name="pasaporte_vencimiento"
+                        placeholder="Fecha Vencimiento del Pasaporte" [(ngModel)]="data.I_FECHA_CADUCIDAD_PASAPORTE">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>NIT</label>
+                            <input type="text" class="form-control" name="nit" placeholder="nit" [(ngModel)]="data.I_NIT">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>Genero</label>
+                            <input type="text" class="form-control" name="genero" placeholder="Genero"
+                                [(ngModel)]="data.I_GENERO">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>DPI</label>
+                            <input type="text" class="form-control" name="dpi" placeholder="DPI" [(ngModel)]="data.I_DPI">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label>Estado Civil</label>
+                            <input type="text" class="form-control" name="estado_civil" placeholder="Estado Civil"
+                                [(ngModel)]="data.I_ESTADO_CIVIL">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Numero de Cuenta Bancaria</label>
+                    <input type="text" class="form-control" name="genero" placeholder="Genero"
+                        [(ngModel)]="data.I_NUMERO_CUENTA_BANCARIA">
+                </div>
+                <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <button type="submit" class="bnt btn-primary w-100">
+                                    Registrar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                    <button type="submit" class="bnt btn-primaryn w-100" [routerLink]="['/login']">
+                                            login
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -22,7 +22,7 @@ export class PrestamosComponent implements OnInit {
   data = {
     id_persona: '6',
     tarjeta_debito:  '',
-    resibo_bancario: '',
+    caducidad_tarjeta: '',
     prestamo:  '',
     fecha_vencimiento: this.fechaF,
     fecha_creacion_prestamo: this.fecha,
@@ -61,6 +61,7 @@ export class PrestamosComponent implements OnInit {
     formData.append('images[]', this.uploadForm.get('profile1').value);
     formData.append('id_persona', this.data.id_persona);
     formData.append('tarjeta_debito', this.data.tarjeta_debito);
+    formData.append('caducidad_tarjeta', this.data.caducidad_tarjeta);
     formData.append('prestamo', this.data.prestamo);
     formData.append('fecha_vencimiento', this.data.fecha_vencimiento);
     formData.append('fecha_creacion_prestamo', this.data.fecha_creacion_prestamo);
